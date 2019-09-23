@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0
+}
+
+header {
+    background: #222629;
+    height: 3.5rem;
+    position: relative;
+    z-index: 10;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    max-width: 1200px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+i {
+    display: none !important;
+    padding: .3rem 1rem;
+    border-radius: 6px;
+    margin: 0 1rem;
+    height: 50px;
+    width: 150px;
+    background: #FED136;
+    color: white;
+}
+
+li {
+    list-style: none;
+    margin: 0 1rem;
+    color: #FED136;
+}
+
+.logo > h1{
+    color: #FED136;
+}
+
+.dropdown {
+    background: #222629;
+    height: 200px;
+    transition: .4s;
+}
+
+.dropdown > .container {
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.dropdown li {
+    padding: .6rem 0
+}
+
+.hide {
+    height: 0;
+    overflow: hidden;
+}
+
+.welcome-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg)
+}
+
+.welcome-container h1{
+    color: white;
+}
+
+button{
+    height: 100px;
+    width: 300px;
+    background: #FED136;
+    border-radius: 8px;
+    font-size: 2rem;
+    color: white;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servh1{
+    font-size: 3rem;
+}
+
+.services > li {
+    font-size: 2rem;
+}
+
+.ugh {
+    display: flex;
+    justify-content: center;
+}
+
+.services-container{
+    height: 100vh;
+    width: 100%
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+@media (max-width: 1000px){
+    .container{
+        max-width: 800px;
+    }
+    i {
+        display: inline-block !important;
+    }
+    nav > li {
+        display: none;
+    }
+}
